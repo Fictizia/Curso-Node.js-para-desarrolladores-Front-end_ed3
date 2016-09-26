@@ -1,6 +1,6 @@
-![shieldsIO](https://img.shields.io/github/issues/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed2.svg)
-![shieldsIO](https://img.shields.io/github/forks/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed2.svg)
-![shieldsIO](https://img.shields.io/github/stars/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed2.svg)
+![shieldsIO](https://img.shields.io/github/issues/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed3.svg)
+![shieldsIO](https://img.shields.io/github/forks/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed3.svg)
+![shieldsIO](https://img.shields.io/github/stars/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed3.svg)
 
 # Node.js para desarrolladores Front-end
 ### Automatización, JavaScript Server-Side, Express, Yeoman, Gulp, Bower, Heroku, Firebase.
@@ -38,6 +38,7 @@ Sobre el Curso
 
 Teoría y Recursos
 =================
+
 Teoría | Recursos
 ------------ | -------------
 [Clase 1](teoria/clase1.md)	| [Clase 1](recursos/clase1.md)
