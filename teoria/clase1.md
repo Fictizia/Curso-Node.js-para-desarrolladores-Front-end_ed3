@@ -1,4 +1,4 @@
-# Clase 1
+# Clase 1 - Intro
 
 ### Normas y demás
 - Puntualidad
