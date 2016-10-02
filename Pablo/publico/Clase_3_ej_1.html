@@ -1,1 +1,24 @@
-http://www.omdbapi.com/?t=hackers&y=&plot=short&r=json
+<script>
+
+function peticionAjax(url) {
+        var xmlHttp = new XMLHttpRequest();
+
+        xmlHttp.onreadystatechange = function() {
+
+            if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                document.getElementById("main").innerHtml = JSON.parse(xmlHttp.responseText);
+            } else if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+                document.getElementById("main").innerHtml = "Error 404!";
+                document.getElementById("main").innerHtml = JSON.parse(xmlHttp.responseText);
+            }
+        };
+        xmlHttp.open("GET", url, true);
+        xmlHttp.send();
+    }
+
+    peticionAjax("http://www.omdbapi.com/?t=hackers&y=&plot=short&r=json");
+</script>
+
+<div id="main">
+
+</div>
