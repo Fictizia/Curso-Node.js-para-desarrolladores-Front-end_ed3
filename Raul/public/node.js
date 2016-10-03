@@ -36,6 +36,6 @@ var http = require('http'),
       res.end('Querido... 404!');
     }
 
-  }).listen(process.env.15454, process.env.IP);
+  }).listen(process.env.PORT, process.env.IP);
 
-  console.log('Servidor funcionando en http://'+process.env.IP+':'+process.env.15454+'/');
+  console.log('Servidor funcionando en http://'+process.env.IP+':'+process.env.PORT+'/');
