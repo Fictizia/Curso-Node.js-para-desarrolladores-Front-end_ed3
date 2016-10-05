@@ -6,7 +6,7 @@ var options = {
 };
 
 
-http.request(options, function(response) {
+http.get(options, function(response) {
   var str = '';
 
   response.on('data', function (chunk) {
