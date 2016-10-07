@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>Película de OMDB</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+<script>
+
+    var miObjeto ={};
+
+
+  function peticionAjax (movieName) {
+      var xmlHttp = new XMLHttpRequest(),
+                    cURL = 'https://crossorigin.me/https://www.omdbapi.com/?t='+movieName+'&y=&plot=full&r=json';
+
+                xmlHttp.onreadystatechange = function () {
+
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        var datos = (JSON.parse(xmlHttp.responseText));
+                        miObjeto = datos;
+                        var contenido = "";
+                        contenido += "<h1>"+datos.Title+"</h1>"
+                        contenido += "<p>"+datos.Plot+"</p>"
+                        document.getElementById('lapeli').innerHTML += contenido;
+
+
+                    } else if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+                        console.error("ERROR! 404");
+                        console.info(JSON.parse(xmlHttp.responseText));
+                    }
+                };
+
+                xmlHttp.open( "GET", cURL, true );
+                xmlHttp.send();
+    }
+
+
+
+   peticionAjax("hackers");
+
+   //http://www.omdbapi.com/?t=hackers&y=&plot=short&r=json
+
+</script>
+
+
+    <h1>Peliculas OMDB</h1>
+    <h3>Mostrar película</h3>
+    <hr />
+
+    <div id="lapeli"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Cuadros eléctricos Gijón</title>
+    </head>
+    <body>
+        <script>
+         function peticionAjax () {
+       // function peticionAjax (idCiudad) {
+      var xmlHttp = new XMLHttpRequest(),
+
+
+                cURL = 'https://crossorigin.me/http://opendata.gijon.es/descargar.php?id=163&tipo=JSON';
+                // https://crossorigin.me/
+                 //NOTA: PARA VER MEJOR UN JSON DEVUELTO:  http://jsonviewer.stack.hu/
+
+                xmlHttp.onreadystatechange = function () {
+
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {  // readyState valor numérico (entero) que almacena el estado de la petición (4 = Completo (se han recibido todos los datos de la respuesta del servidor))
+                        var datos = (JSON.parse(xmlHttp.responseText));
+                        var contenido = "";
+                       
+                       
+                       console.log(datos.cuadromandos.cuadromando.length);
+                       console.log("calle: "+datos.cuadromandos.cuadromando[0].calle+"\n"+"numero: "+ datos.cuadromandos.cuadromando[0].numero +"\n"+"potencia: "+ datos.cuadromandos.cuadromando[0].potencia_w_ );
+                       
+                       contenido += "<h1>Cuadros eléctricos de Gijón</h1>"
+                      contenido += "<p>Calle: "+datos.cuadromandos.cuadromando[0].calle+"</p>"
+                      contenido += "<p>Número: "+datos.cuadromandos.cuadromando[0].numero+"</p>"
+                      contenido += "<p>Potencia: "+datos.cuadromandos.cuadromando[0].potencia_w_+"</p>"
+
+                        document.body.innerHTML = contenido;
+                    } else if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+                        console.error("ERROR! 404");
+                        console.info(JSON.parse(xmlHttp.responseText));
+                    }
+                };
+
+                xmlHttp.open( "GET", cURL, true );
+                xmlHttp.send();
+    }
+
+    peticionAjax();
+
+        </script>
+
+        <div id="losDatos"></div>
+    </body>
+</html>
