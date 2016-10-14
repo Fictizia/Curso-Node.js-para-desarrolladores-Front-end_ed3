@@ -1,12 +1,5 @@
 # Clase 7
 
-### [Google IO 2016](https://events.google.com/io2016/)
-- [Agenda](https://events.google.com/io2016/schedule#agenda)
-- [CodeLabs](https://codelabs.developers.google.com/io2016)
-
-### [Nuevo Firebase](https://firebase.google.com/)
-- [Firebase expands to become a unified app platform](https://firebase.googleblog.com/2016/05/firebase-expands-to-become-unified-app-platform.html)
-
 ### Heroku
 - [Lenguajes soportados](https://devcenter.heroku.com/categories/language-support)
 - [Soporte](https://help.heroku.com/)
