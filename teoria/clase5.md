@@ -748,8 +748,25 @@ console.log(config.token);
 - Descargar (Clonar) nuestro curso de Github
 - Emoji al azar con [emoji-random](https://www.npmjs.com/package/emoji-random)
 
-```javascript
-  // Tu solución
+```json
+{
+  "name": "npm-scripts-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "emoji": "emoji-random",
+    "versions": "node -v && npm -v",
+    "bootstrap": "git clone https://github.com/twbs/bootstrap.git",
+    "curso": "git clone https://github.com/Fictizia/Curso-Node.js-para-desarrolladores-Front-end_ed2.git",
+    "status": "git status"
+  },
+  "devDependencies": {
+    "emoji-random": "^0.1.2"
+  },
+  "author": "Ulises Gascon",
+  "license": "ISC"
+}
 ```
 
 
