@@ -547,9 +547,8 @@ Objetivos:
 - Comprobar si ese mismo usuario ya esta registrado (Email como ID), para evitar multiples inscripciones.
 - Incluiremos en la página los usuarios que se van sumando.
 
-```javascript
-  // Tu solución
-```
+- **[Solución](http://codepen.io/ulisesgascon/pen/19f8b66b32e9ebc0fea3d8dd5c03e0f4)**
+
 
 **2 -** Partiendo del ejercicio anterior... realizaremos un nuevo formulario que nos permita registrarnos usando nuestra cuenta de Github.
 
@@ -560,9 +559,8 @@ Objetivos:
 - Documentación:
   - [GitHub User Authentication](https://www.firebase.com/docs/web/guide/login/github.html)
 
-```javascript
-  // Tu solución
-```
+- **[Solución](http://codepen.io/ulisesgascon/pen/2b9ee3341e4e21ee3c0b32b247313858)**
+
 
 **3 -** Partiendo del ejercicio primer ejercicio... realizaremos un nuevo formulario que nos permita almacenar información adiccional en Firebase usando la [API de FullContact](https://www.fullcontact.com/developer/).
 
@@ -575,9 +573,7 @@ Objetivos:
 - Documentación:
   - [FullContact by Email](https://www.fullcontact.com/developer/docs/email/)
 
-```javascript
-  // Tu solución
-```
+- **[Solución](http://codepen.io/ulisesgascon/pen/b3362ecbd9fc9e393453c6fdd7e92ea9)**
 
 ### Express
 
